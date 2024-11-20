@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/bedf5b75fe.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bedf5b75fe.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js" async></script>
     <title>CV</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-    <!----------- navbar ------------>
-        <div class="nav">
-            <ul>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills & experience</a></li>
-                <li><a href="#">My work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+      <!----------- navbar ------------>
+      <div class="nav">
+        <ul>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Skills & experience</a></li>
+          <li><a href="#">My work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!------------ Main ------------->
+      <section class="about">
+        <div class="about-main">
+          <div class="profile-img-container-3"></div>
+          <div class="profile-img-container-2"></div>
+          <div class="profile-img-container-1"></div>
+          <div class="header">
+            <h1 id="autotext"></h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+              praesentium dolore minima quia laudantium nihil tempore commodi
+              maiores nisi debitis.
+            </p>
+          </div>
         </div>
-    <!------------ Main ------------->
-        <section class="about">
-            <div class="about-main">
-                <div class="profile-img-container-3"></div>
-                <div class="profile-img-container-2"></div>
-                <div class="profile-img-container-1"></div>
-                <div class="header">
-                    <h1 id="autotext"></h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam praesentium dolore minima
-                    quia laudantium nihil tempore commodi maiores nisi debitis.</p>
-                </div>
-            </div>
-        </section>
-    <!------------ Skills ------------->
-        <section class="grid-container">
-            <!--<div class="grid-skill-h1">
+      </section>
+      <!------------ Skills ------------->
+      <section class="grid-container">
+        <!--<div class="grid-skill-h1">
                 <h1>Skills & experience</h1>
             </div>-->
-            <div class="popup-container" id="popup-1">
-                <div class="popup-container-headline">
-                    <div class="grid-skill-h1">
-                        <h1>Skills & experience</h1>
-                    </div>
-                </div>
-            <!--<div class="grid-skill">
+        <div class="popup-container" id="popup-1">
+          <div class="popup-container-headline">
+            <div class="grid-skill-h1">
+              <h1>Skills & experience</h1>
+            </div>
+          </div>
+          <!--<div class="grid-skill">
                 <i class="fa-solid fa-code"></i>
                 <p>HTML, CSS, JavaScript</p>
                 <layer class="grid-overlay">
@@ -65,56 +74,76 @@
                 <layer class="grid-overlay">
                 </layer>
             </div>-->
-                <div class="popup-container-icon">
-                    <div class="grid-skill-icon">
-                        <button class="fa-solid fa-code" id="skill-icon"></button>
-                    </div>
-                    <div class="hidden-content boxes">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, autem.
-                    </div>
-                </div>
-                <div class="popup-container-icon">
-                    <div class="grid-skill-icon">
-                        <button class="fa-solid fa-scissors" id="skill-icon"></button>
-                    </div>
-                </div>
-                <div class="popup-container-icon">
-                    <div class="grid-skill-icon">
-                        <button class="fa-solid fa-list-check" id="skill-icon"></button>
-                    </div>
-                </div>
+          <div class="popup-container-icon">
+            <div class="grid-skill-icon">
+              <button class="fa-solid fa-code" id="skill-icon"></button>
             </div>
-        </section>
-    <!------------ Contact ------------->
-        <section>
-            <div class="contact-container">
-                <div class="contact-form">
-                    <h2>Contact me</h2>
-                    <input type="text" class="field" name="name" placeholder="Your name">
-                    <input type="email" class="field" name="email" placeholder="Your email">
-                    <input type="text" class="field" name="phone" placeholder="Your phone number">
-                    <textarea name="message" class="field" placeholder="Thank you for contacting me..."></textarea>
-                    <input type="submit" value="Submit">
-                </div>
+            <div class="hidden-content boxes">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              autem.
             </div>
-            <div class="contact-address">
-                <div class="name">
-                    <i class="fa-solid fa-pen">
-                        <span class="name-text">Nico Faßbender</span>
-                    </i>
-                </div>
-                <div class="mail">
-                    <i class="fa-solid fa-envelope">
-                        <span class="mail-text">nico.fassbender@outlook.de</span>
-                    </i>
-                </div>
-                <div class="phone">
-                    <i class="fa-solid fa-phone">
-                        <span class="phone-text">+49 (0) 152 / 340 71 441</span>
-                    </i>
-                </div>
+          </div>
+          <div class="popup-container-icon">
+            <div class="grid-skill-icon">
+              <button class="fa-solid fa-scissors" id="skill-icon"></button>
             </div>
-        </section>
+          </div>
+          <div class="popup-container-icon">
+            <div class="grid-skill-icon">
+              <button class="fa-solid fa-list-check" id="skill-icon"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------ Contact ------------->
+      <section>
+        <div class="contact-container">
+          <div class="contact-form">
+            <h2>Contact me</h2>
+            <input
+              type="text"
+              class="field"
+              name="name"
+              placeholder="Your name"
+            />
+            <input
+              type="email"
+              class="field"
+              name="email"
+              placeholder="Your email"
+            />
+            <input
+              type="text"
+              class="field"
+              name="phone"
+              placeholder="Your phone number"
+            />
+            <textarea
+              name="message"
+              class="field"
+              placeholder="Thank you for contacting me..."
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+        <div class="contact-address">
+          <div class="name">
+            <i class="fa-solid fa-pen">
+              <span class="name-text">Nico Faßbender</span>
+            </i>
+          </div>
+          <div class="mail">
+            <i class="fa-solid fa-envelope">
+              <span class="mail-text">xxxxxxxx@xxxx.xx</span>
+            </i>
+          </div>
+          <div class="phone">
+            <i class="fa-solid fa-phone">
+              <span class="phone-text">+49 (0) 152 / xxx xx xxx</span>
+            </i>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
