@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cv-grey: #CACACA;
+    --cv-darkgrey: #202022;
+}
+
+body {
+    font-family: 'Poppins', 'Josefin Sans', sans-serif;
+    width: 100%;
+    font-size: 20px;
+    background: var(--cv-grey);
+}
+
+
+/* -------------- navbar ---------------------*/
+
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    background: var(--cv-darkgrey);
+
+}
+
+.nav ul li {
+    padding: 20px;
+    list-style: none;
+    margin: 0px 5px;
+    transition: 250ms ease;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cv-grey);
+}
+
+.nav ul li:hover{
+    background: #02CC8F;
+    margin: 0px 5px;
+}
+
+
+/* --------- section 1 - image / header -----------*/
+
+.section {
+    position: relative;
+}
+
+
+.about {
+    width: 100%;
+    height: 70vh;
+    padding-top: 50px;
+}
+
+.about .about-main .profile-img-container-1 {
+    width: 500px;
+    height: 500px;
+    background: white;
+    text-align: center;
+    margin: auto;
+    background: url('./bild2.png') center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
+/*.about .about-main .profile-img-container-2 {
+    width: 500px;
+    height: 500px;
+    background: white;
+    text-align: center;
+    margin: auto;
+    background-attachment: local;
+}
+
+.profile-img-container-3 {
+    width: 600px;
+    height: 300px;
+    background: red;
+    text-align: center;
+    margin: auto;
+    background-attachment: local;
+}*/
+
+.about .about-main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.about .about-main .header {
+    width: 75%;
+    position: absolute;
+    text-align: center;
+    color: var(--cv-darkgrey);
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.about .about-main .header p {
+    padding-top: 10px;
+}
+
+
+
+/* ------------------ section 2 - skills ------------------*/
+
+.grid-container {
+    width: 100%;
+    height: 30vh;
+    background: var(--cv-darkgrey);
+}
+
+.popup-container {
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0fr;
+
+    z-index: 1;
+}
+
+.popup-container-headline {
+    width: auto;
+    height: 100%;
+    grid-column-end: span 4;
+}
+
+.popup-container-icon {
+    width: auto;
+    height: 100%;
+    grid-column-end: span 1;
+    display: grid;
+    
+}
+
+.grid-skill-h1 {
+    margin: auto;
+    color: var(--cv-grey);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.grid-skill-icon {
+    text-align: center;
+}
+
+.close-btn {
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    border: 50%;
+}
+
+.hidden-content {
+    display: none;
+}
+
+.hidden-content.fa-code {
+    display: grid;
+    position: absolute;
+    width: 33%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+button {
+    
+}
+
+.fa-solid {
+    background-color: var(--cv-grey);
+    font-size: 75px;
+    padding: 25px;
+    margin: auto;
+}
+
+.fa-scissors, .fa-list-check {
+    margin: 0px 18.75px;
+    background: #02A676;
+    transition: 250ms ease;
+}
+
+.fa-code {
+    margin: 0;
+    background: #02A676;
+    transition: 250ms ease;
+
+}
+
+.fa-code:hover, .fa-scissors:hover, .fa-list-check:hover {
+    background: #02CC8F;
+}
+
+.grid-skill p {
+    color: var(--cv-grey);
+    padding: 20px;
+}
+
+
+/* ------------------ section 3 ------------------*/
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* ------------------ contact-form ------------------*/
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    width: 100%;
+    height: 50vh;
+    padding-top: 100px;
+}
+
+.contact-form {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contact-form h2 {
+    margin: 5px;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 50%;
+    font-family: 'Poppins', 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    resize: vertical;
+    background: var(--cv-darkgrey);
+    color: var(--cv-grey);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.field {
+
+}
+
+input[type=submit] {
+    width: 110px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-family: 'Poppins', 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: none;
+    background: #02A676;
+    color: var(--cv-grey);
+    box-shadow: 1px 1px #202022;
+    transition: 250ms ease;
+}
+
+input[type=submit]:hover {
+    background: #02CC8F;
+}
+
+
+
+/* ------------------ my contacts ------------------*/
+
+.contact-address {
+    width: 100%;
+    height: 50vh;
+    display: block;
+    padding-top: 300px;
+}
+
+.contact-address p {
+    width: 75%;
+    text-align: left;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name, .mail, .phone {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-pen, .fa-envelope, .fa-phone {
+    text-align: left;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+.name-text, .mail-text, .phone-text {
+    font-family: 'Poppins', 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 10px;
+}
